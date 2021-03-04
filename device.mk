@@ -54,3 +54,6 @@ PRODUCT_SHIPPING_API_LEVEL := 27
 
 # Treble
 PRODUCT_FULL_TREBLE_OVERRIDE := true
+
+# Vendor
+$(call inherit-product, vendor/xiaomi/violet/violet-vendor.mk)
