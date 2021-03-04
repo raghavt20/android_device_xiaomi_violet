@@ -22,6 +22,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 PRODUCT_SOONG_NAMESPACES += \
     device/xiaomi/violet
 
+# Overlays
+PRODUCT_PACKAGES += \
+    VioletFrameworks \
+    VioletSystemUI
+
 # Platform
 TARGET_BOARD_PLATFORM := msmsteppe
 
