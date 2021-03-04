@@ -22,5 +22,26 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 PRODUCT_SOONG_NAMESPACES += \
     device/xiaomi/violet
 
+# Platform
+TARGET_BOARD_PLATFORM := msmsteppe
+
+# QTI
+TARGET_COMMON_QTI_COMPONENTS += \
+    adreno \
+    audio \
+    av \
+    bt \
+    display \
+    gps \
+    init \
+    media-legacy \
+    overlay \
+    perf \
+    telephony \
+    usb \
+    vibrator \
+    wfd \
+    wlan
+
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 27
